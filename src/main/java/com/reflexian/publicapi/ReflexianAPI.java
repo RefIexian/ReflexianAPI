@@ -23,20 +23,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class ReflexianAPI {
-
-    public static void main(String[] args) throws ExecutionException, InterruptedException {
-        ReflexianAPI r = new ReflexianAPI("4adfe27e-63d3-45b9-8238-62b6ed6fdb5e");
-
-        for (int i =0;i<269;i++) {
-            try {
-                JsonObject j = r.getPlayerByUuid("4870cca0-6cf6-4f00-9fd9-bc5473f6e3f1").get().getResponse();
-                System.out.println(j);
-            }catch (ReflexianException|ExecutionException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
+    
     //TODO https
     private static final String BASE_URL = "http://api.reflexian.com/";
     private final String apiKey;
