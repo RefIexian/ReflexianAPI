@@ -1,5 +1,10 @@
 Reflexian Public API (Java)
 ======
+
+
+## ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) WARNING: This repository is in development! ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) 
+
+
 This is a Java implementation of the Reflexian API. For discussing the API, requesting help or suggestions you can use the
 GitHub [Discussions](https://github.com/RefIexian/ReflexianAPI/discussions).
 
