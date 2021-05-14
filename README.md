@@ -32,7 +32,7 @@ You can use this API as a dependency via JitPack.
     <dependency>
         <groupId>com.github.RefIexian</groupId>
 	<artifactId>ReflexianAPI</artifactId>
-	<version>1.0-B</version>
+	<version>1.0-A</version>
     </dependency>
 </dependencies>	
 
