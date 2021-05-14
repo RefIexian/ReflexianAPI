@@ -9,6 +9,7 @@ import com.reflexian.publicapi.exceptions.APIThrottleException;
 import com.reflexian.publicapi.exceptions.KeyBlacklistedException;
 import com.reflexian.publicapi.exceptions.ReflexianException;
 import com.reflexian.publicapi.reply.AbstractReply;
+import com.reflexian.publicapi.reply.prison.KeyReply;
 import com.reflexian.publicapi.reply.prison.PlayerReply;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
@@ -51,6 +52,14 @@ public class ReflexianAPI {
         return get(PlayerReply.class, "player", uuid);
     }
 
+    /**
+     * @param key the key in string format, must be dashed.
+     * @return the future
+     */
+    public CompletableFuture<KeyReply> getKeyByKey(String key) {
+        return get(KeyReply.class, "key", key);
+    }
+
 
     private <R extends AbstractReply> CompletableFuture<R> get(Class<R> clazz, String request, String params) {
         CompletableFuture<R> future = new CompletableFuture<>();
@@ -72,6 +81,8 @@ public class ReflexianAPI {
                         String content = EntityUtils.toString(obj.getEntity(), "UTF-8");
                         if (clazz == PlayerReply.class) {
                             return (R) new PlayerReply(GSON.fromJson(content, JsonObject.class));
+                        } else if (clazz == KeyReply.class) {
+                            return (R) new KeyReply(GSON.fromJson(content,JsonObject.class));
                         } else {
                             return GSON.fromJson(content, clazz);
                         }
