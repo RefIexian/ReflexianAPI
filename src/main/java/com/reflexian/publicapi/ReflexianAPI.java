@@ -23,17 +23,14 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class ReflexianAPI {
-    
-    //TODO https
-    private static final String BASE_URL = "http://api.reflexian.com/";
+
+    private static ReflexianAPI reflexianAPI;
+
+    private static final String BASE_URL = "https://api.reflexian.com/";
     private final String apiKey;
     private static final Gson GSON = new GsonBuilder()
             .registerTypeAdapter(UUID.class, new UUIDTypeAdapter())
-            //.registerTypeAdapter(GameType.class, new GameTypeTypeAdapter())
             .registerTypeAdapter(ZonedDateTime.class, new DateTimeTypeAdapter())
-
-            //.registerTypeAdapterFactory(new BoostersTypeAdapterFactory<>(BoostersReply.Booster.class))
-
             .create();
 
     private final ExecutorService executorService;
@@ -68,8 +65,6 @@ public class ReflexianAPI {
             url.append(request);
             url.append("/").append(params);
             url.append("?key=").append(apiKey);
-
-            System.out.println(url.toString());
 
             executorService.submit(() -> {
                 try {
