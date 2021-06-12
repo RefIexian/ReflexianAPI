@@ -3,7 +3,7 @@ Reflexian Public API (Java)
 
 
 This is a Java implementation of the Reflexian API. For discussing the API, requesting help or suggestions you can use the
-GitHub [Discussions](https://github.com/RefIexian/ReflexianAPI/discussions).
+GitHub [Discussions](https://github.com/RefLexian/ReflexianAPI/discussions).
 
 ### Documentation
 
@@ -17,7 +17,7 @@ Github issues should only be used to report bugs. Everything else should either 
 
 Add this to your maven pom.xml, replacing ``VERSION`` with the JitPack version below.
 
-[![](https://jitpack.io/v/RefIexian/ReflexianAPI.svg)](https://jitpack.io/#RefIexian/ReflexianAPI)
+[![](https://jitpack.io/v/RefLexian/ReflexianAPI.svg)](https://jitpack.io/#RefLexian/ReflexianAPI)
 
 ```xml
 <repositories>
@@ -29,7 +29,7 @@ Add this to your maven pom.xml, replacing ``VERSION`` with the JitPack version b
 	
 <dependencies>
     <dependency>
-        <groupId>com.github.RefIexian</groupId>
+        <groupId>com.github.Reflexian</groupId>
 	<artifactId>ReflexianAPI</artifactId>
 	<version>VERSION</version>
     </dependency>
