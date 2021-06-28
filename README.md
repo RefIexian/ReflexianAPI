@@ -7,7 +7,7 @@ GitHub [Discussions](https://github.com/RefLexian/ReflexianAPI/discussions).
 
 ### Documentation
 
-Reflexian Public API documentation is currently being worked on. For API support join [our discord](https://discord.gg/s8x53ZhsQx).
+Reflexian Public API documentation is available [here](https://github.com/Reflexian/ReflexianAPI/wiki). For API support join [our discord](https://discord.gg/s8x53ZhsQx).
 
 ### GitHub Issues
 
