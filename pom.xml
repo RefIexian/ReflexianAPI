@@ -33,13 +33,6 @@
 
     </dependencies>
 
-<!--    <distributionManagement>
-        <repository>
-            <id>Reflexian</id>
-            <url>https://repo.hypixel.net/repository/Hypixel/</url>
-        </repository>
-    </distributionManagement> -->
-
     <build>
         <plugins>
             <plugin>

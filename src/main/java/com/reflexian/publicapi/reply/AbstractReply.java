@@ -9,6 +9,7 @@ public abstract class AbstractReply {
     protected boolean blacklisted;
     protected boolean success;
     protected String cause;
+    protected boolean licenseKeyError;
 
     public boolean isThrottled() {
         return throttled;
@@ -23,6 +24,10 @@ public abstract class AbstractReply {
 
     public String getCause() {
         return cause;
+    }
+
+    public boolean isLicenseKeyError() {
+        return licenseKeyError;
     }
 
     @Override
