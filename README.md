@@ -25,7 +25,7 @@ You can use this API as a dependency via JitPack.
 	
 <dependencies>
     <dependency>
-        <groupId>com.github.RefIexian</groupId>
+        <groupId>com.github.Reflexian</groupId>
 	<artifactId>ReflexianAPI</artifactId>
 	<version>1.7.6</version>
     </dependency>
