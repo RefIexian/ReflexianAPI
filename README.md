@@ -13,7 +13,7 @@ Github issues should only be used to report bugs. Everything else should either 
 
 ### Usage
 
-You can use this API as a dependency via JitPack.
+You can use this API as a dependency via our Public Repository.
 
 ```xml
 <repositories>
@@ -50,7 +50,7 @@ your use case and why you require a higher limit.
 
 Additionally, users with the API Pass have a request limit of 240 queries per minute. Reflexian API Pass can be purchased through our discord.
 
-### Obtaining an API Key (WIP)
+### Obtaining an API Key (Not Currently Available)
 
 You can obtain an API key by joining ```mc.reflexian.com``` with a valid Minecraft account and running the /api command.
 You will then be assigned a unique key that is to remain **private**.
