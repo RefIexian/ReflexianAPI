@@ -18,16 +18,16 @@ You can use this API as a dependency via JitPack.
 ```xml
 <repositories>
     <repository>
-        <id>jitpack.io</id>
-        <url>https://jitpack.io</url>
+        <id>reflexian-repo</id>
+        <url>https://repository.reflexian.com/releases/</url>
     </repository>
 </repositories>
 	
 <dependencies>
     <dependency>
-        <groupId>com.github.Reflexian</groupId>
-	<artifactId>ReflexianAPI</artifactId>
-	<version>1.7.6</version>
+        <groupId>com.reflexian</groupId>
+        <artifactId>publicapi</artifactId>
+        <version>1.0-D</version>
     </dependency>
 </dependencies>	
 
